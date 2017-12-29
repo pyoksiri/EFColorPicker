@@ -29,9 +29,9 @@ import CoreGraphics
 
 // The structure to represent a color in the Red-Green-Blue-Alpha color space.
 public struct RGB {
-    var red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat
+    public var red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat
 
-    init(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat, _ alpha: CGFloat) {
+    public init(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat, _ alpha: CGFloat) {
         self.red = red
         self.green = green
         self.blue = blue
@@ -41,9 +41,9 @@ public struct RGB {
 
 // The structure to represent a color in the hue-saturation-brightness color space.
 public struct HSB {
-    var hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat
+    public var hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat
 
-    init(_ hue: CGFloat, _ saturation: CGFloat, _ brightness: CGFloat, _ alpha: CGFloat) {
+    public init(_ hue: CGFloat, _ saturation: CGFloat, _ brightness: CGFloat, _ alpha: CGFloat) {
         self.hue = hue
         self.saturation = saturation
         self.brightness = brightness
@@ -65,7 +65,7 @@ let EFHSBColorComponentMaxValue: CGFloat = 1.0
 // returns h, s, and b in the set [0, 1].
 // @param rgb   The rgb color values
 // @return The hsb color values
-func EFRGB2HSB(rgb: RGB) -> HSB {
+public func EFRGB2HSB(rgb: RGB) -> HSB {
     let rd = Double(rgb.red)
     let gd = Double(rgb.green)
     let bd = Double(rgb.blue)
