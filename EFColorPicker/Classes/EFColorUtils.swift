@@ -148,7 +148,7 @@ func EFHSB2RGB(hsb: HSB) -> RGB {
 // Returns the rgb values of the color components.
 // @param color The color value.
 // @return The values of the color components (including alpha).
-func EFRGBColorComponents(color: UIColor) -> RGB {
+public func EFRGBColorComponents(color: UIColor) -> RGB {
     var result = RGB(1, 1, 1, 1)
     guard let colorSpaceModel: CGColorSpaceModel = color.cgColor.colorSpace?.model else {
         return result

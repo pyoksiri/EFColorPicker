@@ -31,7 +31,7 @@ import CoreGraphics
 public class EFColorWheelView: UIControl {
 
     // The hue value.
-    var hue: CGFloat = 0.0 {
+    public var hue: CGFloat = 0.0 {
         didSet {
             self.setSelectedPoint(point: ef_selectedPoint())
             self.setNeedsDisplay()
@@ -39,7 +39,7 @@ public class EFColorWheelView: UIControl {
     }
 
     // The saturation value.
-    var saturation: CGFloat = 0.0 {
+    public var saturation: CGFloat = 0.0 {
         didSet {
             self.setSelectedPoint(point: ef_selectedPoint())
             self.setNeedsDisplay()
