@@ -180,7 +180,7 @@ public func EFRGBColorComponents(color: UIColor) -> RGB {
 // Converts hex string to the UIColor representation.
 // @param color The color value.
 // @return The hex string color value.
-func EFHexStringFromColor(color: UIColor) -> String? {
+public func EFHexStringFromColor(color: UIColor) -> String? {
     guard let colorSpaceModel: CGColorSpaceModel = color.cgColor.colorSpace?.model else {
         return nil
     }
