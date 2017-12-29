@@ -28,7 +28,7 @@ import UIKit
 import CoreGraphics
 
 // The structure to represent a color in the Red-Green-Blue-Alpha color space.
-struct RGB {
+public struct RGB {
     var red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat
 
     init(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat, _ alpha: CGFloat) {
@@ -40,7 +40,7 @@ struct RGB {
 }
 
 // The structure to represent a color in the hue-saturation-brightness color space.
-struct HSB {
+public struct HSB {
     var hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat
 
     init(_ hue: CGFloat, _ saturation: CGFloat, _ brightness: CGFloat, _ alpha: CGFloat) {
