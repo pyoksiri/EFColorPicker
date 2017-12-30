@@ -218,7 +218,7 @@ public func EFHexStringFromColor(color: UIColor) -> String? {
 // Converts UIColor value to the hex string.
 // @param hexString The hex string color value.
 // @return The color value.
-func EFColorFromHexString(hexColor: String) -> UIColor? {
+public func EFColorFromHexString(hexColor: String) -> UIColor? {
     if !hexColor.hasPrefix("#") {
         return nil
     }
